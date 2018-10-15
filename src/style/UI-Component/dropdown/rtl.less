@@ -1,0 +1,20 @@
+html[dir="rtl"] {
+  .ant-dropdown {
+    right: auto !important;
+
+    .ant-dropdown-menu-submenu {
+      &:last-child {
+        .ant-dropdown-menu-submenu-title {
+          &:after {
+            -webkit-transform: scale(0.83333333) rotate(180deg);
+            -ms-transform: scale(0.83333333) rotate(180deg);
+            transform: scale(0.83333333) rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+  .ant-select-dropdown {
+    right: auto !important;
+  }
+}

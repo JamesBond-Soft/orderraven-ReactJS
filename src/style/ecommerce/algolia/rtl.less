@@ -1,0 +1,97 @@
+html[dir="rtl"] {
+  .isoAlgoliaSearchPage {
+    // Sidebar
+    .isoAlgoliaSidebar {
+      // SearchBox
+      .ais-SearchBox__root {
+        .ais-SearchBox__input {
+          padding-left: 36px;
+          padding-right: 56px;
+        }
+
+        .ais-SearchBox__submit {
+          left: auto;
+          right: 0;
+        }
+      }
+
+      // Radio
+      .ais-MultiRange__root {
+        .ais-MultiRange__item {
+          .ais-MultiRange__itemBox {
+            margin-right: 0;
+            margin-left: 8px;
+          }
+        }
+      }
+
+      // Checkbox with SearchBox
+      .ais-RefinementList__root {
+        // Search
+        .ais-RefinementList__SearchBox {
+          .ais-SearchBox__input {
+            padding-left: 15px;
+            padding-right: 30px;
+          }
+        }
+
+        // Checkbox
+        .ais-RefinementList__items {
+          .ais-RefinementList__item {
+            margin-top: 10px;
+
+            .ais-RefinementList__itemBox {
+              margin-right: 0;
+              margin-left: 8px;
+            }
+          }
+        }
+      }
+
+      // Rating
+      .ais-StarRating__root {
+        .ais-StarRating__ratingLink {
+          margin-top: 6px;
+        }
+      }
+
+      // Hierarchical Menu
+      .ais-HierarchicalMenu__root {
+        .ais-HierarchicalMenu__item {
+          float: right;
+
+          &:after {
+            right: auto;
+            left: -22px;
+            -webkit-transform: translateY(-50%) rotate(180deg);
+            transform: translateY(-50%) rotate(180deg);
+          }
+
+          a {
+            display: -webkit-inline-flex;
+            display: -ms-inline-flex;
+            display: inline-flex;
+            align-items: center;
+
+            .ais-HierarchicalMenu__itemCount {
+              float: left;
+              line-height: 1.2;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    // Pagination
+    .isoAlgoliaPagination {
+      .ais-Pagination__root {
+        padding: 8px 16px;
+
+        .ais-Pagination__item {
+          padding: 3px;
+        }
+      }
+    }
+  }
+}

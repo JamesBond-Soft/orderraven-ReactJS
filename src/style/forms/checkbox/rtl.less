@@ -1,0 +1,41 @@
+html[dir="rtl"] {
+  .ant-checkbox {
+    &.ant-checkbox-checked {
+      .ant-checkbox-inner {
+        &:after {
+          right: auto !important;
+          left: 4px;
+          border-right: 2px solid #fff;
+          border-left: 0;
+          -webkit-transform: rotate(45deg) scale(1) !important;
+          -ms-transform: rotate(45deg) scale(1) !important;
+          transform: rotate(45deg) scale(1) !important;
+        }
+      }
+    }
+
+    .ant-checkbox-inner {
+      &:after {
+        right: auto !important;
+        left: 4px;
+        border-right: 2px solid #fff;
+        border-left: 0;
+        -webkit-transform: rotate(45deg) scale(1) !important;
+        -ms-transform: rotate(45deg) scale(1) !important;
+        transform: rotate(45deg) scale(1) !important;
+      }
+    }
+
+    &.ant-checkbox-indeterminate {
+      .ant-checkbox-inner {
+        &:after {
+          right: 0;
+          left: 2px;
+          -webkit-transform: rotate(0) scale(1) !important;
+          -ms-transform: rotate(0) scale(1) !important;
+          transform: rotate(0) scale(1) !important;
+        }
+      }
+    }
+  }
+}

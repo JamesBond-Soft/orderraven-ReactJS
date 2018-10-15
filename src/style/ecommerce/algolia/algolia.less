@@ -1,0 +1,63 @@
+.isoAlgoliaSearchPage {
+  padding: 70px 35px 40px;
+  // background-color: #f5f6f8;
+  overflow: hidden;
+
+  @media only screen and (max-width: 767px) {
+    padding: 50px 15px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    padding: 50px 30px;
+  }
+
+  .isoAlgoliaSidebarToggle {
+    margin-bottom: 20px;
+    margin-left: auto;
+    display: flex;
+  }
+
+  &.sidebarOpen {
+    .isoAlgoliaSidebar {
+      margin-left: 0;
+    }
+  }
+
+  .isoAlgoliaMainWrapper {
+    width: 100%;
+    display: flex;
+  }
+
+  .isoAlgoliaFooter {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 40px;
+
+    span {
+      font-size: @isoFontSize;
+      font-weight: 700;
+      color: @isoColor--Text;
+      line-height: 1.3;
+      margin-right: 20px;
+    }
+
+    .isoLogoWrapper {
+      max-width: 150px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  @import './sidebar.less';
+  @import './content.less';
+  @import './topbar.less';
+  @import './single-grid.less';
+  @import './single-list.less';
+  @import './pagination.less';
+  @import './voiceSearch.less';
+  @import './loader.less';
+}

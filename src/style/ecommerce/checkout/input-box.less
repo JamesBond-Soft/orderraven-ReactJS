@@ -1,0 +1,32 @@
+.isoInputBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  label {
+    font-size: @isoFontSize;
+    font-weight: 500;
+    color: @isoColor--Heading;
+    line-height: 1.2;
+    margin-bottom: 17px;
+    display: flex;
+    position: relative;
+
+    .asterisk {
+      font-size: @isoFontSize + 1;
+      font-weight: 400;
+      color: @isoColor--Orange;
+      line-height: 1.2;
+      margin-left: 3px;
+    }
+  }
+
+  input {
+    .isoBorderRadius(0);
+  }
+}

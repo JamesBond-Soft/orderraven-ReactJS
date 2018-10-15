@@ -1,0 +1,9 @@
+th.column-align-center,
+td.column-align-center {
+  text-align: center !important;
+}
+
+th.column-align-right,
+td.column-align-right {
+  text-align: right !important;
+}

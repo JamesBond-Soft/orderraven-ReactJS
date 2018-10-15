@@ -1,0 +1,17 @@
+html[dir="rtl"] {
+  .ant-tree-checkbox {
+    &.ant-tree-checkbox-checked {
+      .ant-tree-checkbox-inner {
+        &:after {
+          right: auto !important;
+          left: 4px;
+          border-right: 2px solid #fff;
+          border-left: 0;
+          -webkit-transform: rotate(45deg) scale(1) !important;
+          -ms-transform: rotate(45deg) scale(1) !important;
+          transform: rotate(45deg) scale(1) !important;
+        }
+      }
+    }
+  }
+}

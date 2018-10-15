@@ -1,0 +1,26 @@
+html[dir="rtl"] {
+  .ant-collapse {
+    > .ant-collapse-item {
+      > .ant-collapse-header {
+        padding: 8px 8px 8px 32px !important;
+        .arrow {
+          left: 16px !important;
+          right: auto !important;
+        }
+
+        &.ant-collapse-header[aria-expanded="false"] {
+          .arrow {
+            -webkit-transform: scale(0.75) rotate(-180deg);
+            -ms-transform: scale(0.75) rotate(-180deg);
+            transform: scale(0.75) rotate(-180deg);
+          }
+        }
+        &.ant-collapse-header[aria-expanded="true"] .arrow {
+          -webkit-transform: scale(0.75) rotate(-270deg);
+          -ms-transform: scale(0.75) rotate(-270deg);
+          transform: scale(0.75) rotate(-270deg);
+        }
+      }
+    }
+  }
+}

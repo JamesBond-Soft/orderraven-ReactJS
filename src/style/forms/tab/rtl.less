@@ -1,0 +1,18 @@
+html[dir="rtl"] {
+  .ant-tabs {
+    &:not(.ant-tabs-vertical) {
+      > .ant-tabs-content-animated {
+        display: block;
+        will-change: unset;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+    }
+
+    .ant-tabs-nav {
+      > div.ant-tabs-ink-bar {
+        display: none !important;
+      }
+    }
+  }
+}

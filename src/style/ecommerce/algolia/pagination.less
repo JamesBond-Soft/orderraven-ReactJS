@@ -1,0 +1,29 @@
+.isoAlgoliaPagination {
+  .ais-Pagination__root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 8px 16px;
+    border: 1px solid @isoColor--Border;
+    .isoBoxShadow(none);
+    .isoBorderRadius(3px);
+
+    .ais-Pagination__item {
+      padding: 3px;
+
+      &.ais-Pagination__itemSelected {
+        &:hover {
+          background-color: #3369e7;
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
