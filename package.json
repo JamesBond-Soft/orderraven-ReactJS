@@ -92,7 +92,7 @@
     "rheostat": "^2.1.1",
     "rich-marker": "0.0.1",
     "styled-components": "^2.2.3",
-    "uppy": "^0.18.1"
+    "uppy": "^3.2.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
